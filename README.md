@@ -1,3 +1,3 @@
-##CalculatorJS
+#CalculatorJS
 
-Projeto desenvolvido para fins didáticos 
+##Projeto desenvolvido para fins didáticos 
