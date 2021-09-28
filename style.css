@@ -1,0 +1,96 @@
+:root{
+    background: url(https://t4.ftcdn.net/jpg/01/64/45/13/360_F_164451366_HvLkIWs4ykPXnjEvBmo1Z1aBH0DnF04M.jpg);
+}
+
+@media (max-width: 1080px) {
+    html{
+        font-size: 93.75%;
+    }
+}
+@media (max-width: 720px) {
+    html{
+        font-size: 87.5%;
+    }
+}
+.container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equals"
+    "zero zero dot equals"
+    ;
+
+}
+
+.padButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #5d5f64;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.padButtons:hover{
+    border: 1px solid white;
+    color: #ccc;
+}
+
+.dark-gray{
+    background-color:#333;
+}
+
+.tomato{
+    background-color: #9d0707;
+}
+
+.blue{
+    background-color: #062177;
+}
+
+
+.dis{
+    grid-area: dis;
+    background-color: black;
+    text-align: right;
+    font-size: 20px;
+}
+.dis input{
+    width: 90%;
+    color: #94b6c7;
+    padding: 5px 20px;
+    text-align: right;
+    background-color: black;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.equals{
+    grid-area: equals;
+}
+
+.total{
+    padding: 5px 20px;
+    color:#eba417;
+}
